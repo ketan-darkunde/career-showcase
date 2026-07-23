@@ -7,16 +7,19 @@
       name="description"
       content="Portfolio website for Ketan Darkunde, DevOps Engineer."
     />
-    <title>Ketan Darkunde | DevOps Engineer</title>
+    <title>Ketan's PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container nav-wrap">
-        <a class="brand" href="#home" aria-label="Ketan Darkunde home">Ketan Darkunde</a>
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-          <span class="theme-icon">🌙</span>
-        </button>
+        <a class="brand" href="#home" aria-label="Ketan's portfolio home">Ketan's PORTFOLIO</a>
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="#about">About</a>
           <a href="#education">Education</a>
@@ -24,6 +27,9 @@
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <span class="theme-icon">🌙</span>
+        </button>
       </div>
     </header>
 
@@ -31,26 +37,24 @@
       <section class="hero section">
         <div class="container hero-grid">
           <div class="hero-copy fade-in">
-            <p class="eyebrow">DEVOPS ENGINEER</p>
-            <h1>Ketan Darkunde</h1>
-            <p class="lead">
-              Dynamic professional with 5+ years of comprehensive experience in DevOps,
-              CI/CD automation, and server administration across Windows and Linux
-              environments.
-            </p>
+            <h1>
+              Hi, My name is <span class="highlight-name">Ketan</span> and i am a
+              passionate <span class="highlight-role">DevOps engineer</span>
+            </h1>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#projects">View Projects</a>
-              <a class="btn btn-secondary" href="#contact">Contact Me</a>
+              <a class="btn btn-primary" href="assets/resume.docx" download>Download Resume</a>
+              <a class="btn btn-secondary" href="https://github.com/ketan-darkunde" target="_blank" rel="noreferrer">View on GitHub</a>
             </div>
           </div>
-          <aside class="hero-card fade-in" aria-label="Professional summary card">
+          <aside class="hero-card fade-in" aria-label="Profile picture">
+            <div class="profile-image-wrap">
+              <img
+                class="profile-image"
+                src="assets/profilepicture.jpg"
+                alt="Profile picture of Ketan Darkunde"
+              />
+            </div>
             <div class="card-glow"></div>
-            <h2>Quick Snapshot</h2>
-            <ul>
-              <li>5+ years in DevOps and infrastructure automation</li>
-              <li>Strong CI/CD and deployment pipeline experience</li>
-              <li>Windows &amp; Linux server administration expertise</li>
-            </ul>
           </aside>
         </div>
       </section>
@@ -238,7 +242,13 @@
             </ul>
           </div>
 
-          <form id="contactForm" class="contact-form fade-in" novalidate>
+          <form
+            id="contactForm"
+            class="contact-form fade-in"
+            action="https://formspree.io/f/xvzewgkj"
+            method="POST"
+            novalidate
+          >
             <div class="form-group">
               <label for="name">Name</label>
               <input id="name" name="name" type="text" required />

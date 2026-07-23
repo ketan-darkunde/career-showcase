@@ -31,6 +31,7 @@ document.querySelectorAll('.fade-in').forEach((element) => observer.observe(elem
 
 const contactForm = document.getElementById('contactForm');
 const formStatus = document.getElementById('formStatus');
+const FORMSPREE_ENDPOINT = contactForm.action;
 
 const validateField = (id, message) => {
   const field = document.getElementById(id);
@@ -51,17 +52,36 @@ const validateField = (id, message) => {
   return true;
 };
 
-contactForm.addEventListener('submit', (event) => {
+contactForm.addEventListener('submit', async (event) => {
   event.preventDefault();
 
   const isNameValid = validateField('name', 'Please enter your name.');
   const isEmailValid = validateField('email', 'Please enter your email.');
   const isMessageValid = validateField('message', 'Please enter your message.');
 
-  if (isNameValid && isEmailValid && isMessageValid) {
+  if (!isNameValid || !isEmailValid || !isMessageValid) {
+    formStatus.textContent = 'Please fix the highlighted fields and try again.';
+    return;
+  }
+
+  try {
+    formStatus.textContent = 'Sending...';
+
+    const response = await fetch(FORMSPREE_ENDPOINT, {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+      },
+      body: new FormData(contactForm),
+    });
+
+    if (!response.ok) {
+      throw new Error('Submission failed.');
+    }
+
     formStatus.textContent = 'Thank you! Your message has been submitted.';
     contactForm.reset();
-  } else {
-    formStatus.textContent = 'Please fix the highlighted fields and try again.';
+  } catch (error) {
+    formStatus.textContent = 'Something went wrong. Please try again later.';
   }
 });
