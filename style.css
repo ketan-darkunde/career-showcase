@@ -50,6 +50,11 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: darkblue;
+  text-decoration: underline, burlywood;
+}
+
 .container {
   width: min(100% - 2rem, var(--container));
   margin: 0 auto;
@@ -154,6 +159,7 @@ a {
   max-width: 100%;
   font-weight: 500;
   min-height: 3.2em;
+  padding:  0 0 50px 0;
 }
 
 .hero-copy {
