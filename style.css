@@ -143,19 +143,33 @@ a {
 .about-grid {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1.2fr 0.8fr;
 }
 
 .hero-copy h1 {
-  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-size: clamp(1.8rem, 4vw, 1.8rem);
   line-height: 1.35;
   margin: 0.4rem 0 0.9rem;
-  max-width: 14ch;
+  max-width: 100%;
+  height: 4em;
   font-weight: 500;
+  min-height: 3.2em;
+}
+
+.hero-copy {
+  min-width: 0;
 }
 
 .highlight-name,
 .highlight-role {
+  color: var(--accent);
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.typed-cursor {
+  display: inline-block;
+  margin-left: 0.1rem;
   color: var(--accent);
 }
 
@@ -207,7 +221,6 @@ a {
   transform: translateY(-2px);
 }
 
-.hero-card,
 .info-panel,
 .project-card,
 .contact-form {
@@ -217,40 +230,16 @@ a {
   box-shadow: var(--shadow);
 }
 
-.hero-card {
-  position: relative;
-  padding: 1.5rem;
-  overflow: hidden;
-}
-
-.profile-image-wrap {
-  width: 100%;
-  height: 100%;
-  min-height: 260px;
-  border-radius: 24px;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  background: var(--surface-alt);
-}
-
-.profile-image {
+.hero-grid > .profile-image {
   display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: min(100%, 500px);
+  max-width: 500px;
+  justify-self: end;
+  margin-left: auto;
+  height: auto;
+  object-fit: contain;
 }
 
-.card-glow {
-  position: absolute;
-  inset: 0 auto auto 0;
-  width: 120px;
-  height: 120px;
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.35), transparent);
-  border-radius: 50%;
-  transform: translate(-25%, -25%);
-}
-
-.hero-card h2,
 .info-panel h3,
 .project-card h3,
 .timeline-item h3 {

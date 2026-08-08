@@ -1,278 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portfolio website for Ketan Darkunde, DevOps Engineer."
-    />
-    <title>Ketan's PORTFOLIO</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <a class="brand" href="#home" aria-label="Ketan's portfolio home">Ketan's PORTFOLIO</a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#education">Education</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-          <span class="theme-icon">🌙</span>
-        </button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio website for Ketan Darkunde, DevOps Engineer." />
+  <title>Ketan's PORTFOLIO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Ketan's portfolio home">Ketan's PORTFOLIO</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="theme-icon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy fade-in">
+          <h1>
+            Hi, My name is <span class="highlight-name">Ketan</span> and i am a
+            passionate <span id="element" class="highlight-role"></span>
+          </h1>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="assets/resume.docx" download>Download Resume</a>
+            <a class="btn btn-secondary" href="https://github.com/ketan-darkunde" target="_blank" rel="noreferrer">View
+              on GitHub</a>
+          </div>
+        </div>
+        <img class="profile-image" src="assets/devops-engineer-illustration.webp" alt="devops-engineer-illustration" />
       </div>
-    </header>
+    </section>
 
-    <main id="home">
-      <section class="hero section">
-        <div class="container hero-grid">
-          <div class="hero-copy fade-in">
-            <h1>
-              Hi, My name is <span class="highlight-name">Ketan</span> and i am a
-              passionate <span class="highlight-role">DevOps engineer</span>
-            </h1>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="assets/resume.docx" download>Download Resume</a>
-              <a class="btn btn-secondary" href="https://github.com/ketan-darkunde" target="_blank" rel="noreferrer">View on GitHub</a>
-            </div>
-          </div>
-          <aside class="hero-card fade-in" aria-label="Profile picture">
-            <div class="profile-image-wrap">
-              <img
-                class="profile-image"
-                src="assets/profilepicture.jpg"
-                alt="Profile picture of Ketan Darkunde"
-              />
-            </div>
-            <div class="card-glow"></div>
-          </aside>
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <p class="eyebrow">About</p>
+          <h2>Professional Summary</h2>
         </div>
-      </section>
-
-      <section id="about" class="section">
-        <div class="container">
-          <div class="section-heading fade-in">
-            <p class="eyebrow">About</p>
-            <h2>Professional Summary</h2>
+        <div class="about-grid fade-in">
+          <div>
+            <p>
+              Dynamic professional with 5+ years of comprehensive experience in DevOps.
+              Exceptional skills in CI/CD Integration to streamline Continuous
+              Integration (CI) and Continuous Deployment (CD) pipelines, working in
+              agile environment. Strong experience Windows &amp; Linux server management.
+              Good knowledge in using PowerShell scripting to automate tasks on Windows
+              servers, improving system efficiency and reducing manual intervention.
+            </p>
           </div>
-          <div class="about-grid fade-in">
+          <div class="info-panel">
+            <h3>Core Skills</h3>
+            <div class="chip-list">
+              <span>CI/CD</span>
+              <span>Windows Server Management</span>
+              <span>Linux Administration</span>
+              <span>PowerShell</span>
+              <span>Python</span>
+              <span>Ansible</span>
+              <span>Docker</span>
+              <span>Kubernetes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section alt-section">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <p class="eyebrow">Education</p>
+          <h2>Academic Background</h2>
+        </div>
+        <div class="timeline-list fade-in">
+          <article class="timeline-item">
+            <div class="timeline-badge"></div>
             <div>
-              <p>
-                Dynamic professional with 5+ years of comprehensive experience in DevOps.
-                Exceptional skills in CI/CD Integration to streamline Continuous
-                Integration (CI) and Continuous Deployment (CD) pipelines, working in
-                agile environment. Strong experience Windows &amp; Linux server management.
-                Good knowledge in using PowerShell scripting to automate tasks on Windows
-                servers, improving system efficiency and reducing manual intervention.
-              </p>
+              <h3>PG Diploma (CDAC) in DITISS</h3>
+              <p>IACSD, Pune, Maharashtra</p>
+              <span>March 2020 – Feb 2021</span>
             </div>
-            <div class="info-panel">
-              <h3>Core Skills</h3>
-              <div class="chip-list">
-                <span>CI/CD</span>
-                <span>Windows Server Management</span>
-                <span>Linux Administration</span>
-                <span>PowerShell</span>
-                <span>Python</span>
-                <span>Ansible</span>
-                <span>Docker</span>
-                <span>Kubernetes</span>
-              </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-badge"></div>
+            <div>
+              <h3>Bachelor of Engineering in E &amp; TC</h3>
+              <p>SCSMCOE, Ahilyanagar, Maharashtra</p>
+              <span>Jun 2014 – Jun 2017</span>
             </div>
-          </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-badge"></div>
+            <div>
+              <h3>Diploma in E &amp; TC</h3>
+              <p>Sau Sunderbai Manik Adsul Polytechnic, Ahilyanagar, Maharashtra</p>
+              <span>Jun 2011 – Jun 2014</span>
+            </div>
+          </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="education" class="section alt-section">
-        <div class="container">
-          <div class="section-heading fade-in">
-            <p class="eyebrow">Education</p>
-            <h2>Academic Background</h2>
-          </div>
-          <div class="timeline-list fade-in">
-            <article class="timeline-item">
-              <div class="timeline-badge"></div>
-              <div>
-                <h3>PG Diploma (CDAC) in DITISS</h3>
-                <p>IACSD, Pune, Maharashtra</p>
-                <span>March 2020 – Feb 2021</span>
-              </div>
-            </article>
-            <article class="timeline-item">
-              <div class="timeline-badge"></div>
-              <div>
-                <h3>Bachelor of Engineering in E &amp; TC</h3>
-                <p>SCSMCOE, Ahilyanagar, Maharashtra</p>
-                <span>Jun 2014 – Jun 2017</span>
-              </div>
-            </article>
-            <article class="timeline-item">
-              <div class="timeline-badge"></div>
-              <div>
-                <h3>Diploma in E &amp; TC</h3>
-                <p>Sau Sunderbai Manik Adsul Polytechnic, Ahilyanagar, Maharashtra</p>
-                <span>Jun 2011 – Jun 2014</span>
-              </div>
-            </article>
-          </div>
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <p class="eyebrow">Experience</p>
+          <h2>Work Timeline</h2>
         </div>
-      </section>
+        <div class="timeline-list fade-in">
+          <article class="timeline-item experience-item">
+            <div class="timeline-badge"></div>
+            <div>
+              <h3>Technical Analyst 2</h3>
+              <p>Bank of America — Gift City, Gujarat</p>
+              <span>Mar 2021 – Present</span>
+              <ul class="experience-points">
+                <li>
+                  Migrated 500+ servers from Windows 2012 to Windows 2019/2022
+                  with planning, PowerShell automation, cross-team coordination,
+                  security hardening, code deployments, and validation with <1% incident rate. </li>
+                <li>
+                  Supported SiteMinder to Ping migration for 200+ internal
+                  applications with post-migration validation and application team coordination.
+                </li>
+                <li>
+                  Built and maintained CI/CD pipelines using Celestial, Ansible,
+                  XLR, and Jenkins to enable efficient automation across environments.
+                </li>
+                <li>
+                  Managed Windows and Linux servers, optimized performance,
+                  security, and uptime, and automated routine tasks with PowerShell and Python.
+                </li>
+              </ul>
+            </div>
+          </article>
 
-      <section id="experience" class="section">
-        <div class="container">
-          <div class="section-heading fade-in">
-            <p class="eyebrow">Experience</p>
-            <h2>Work Timeline</h2>
-          </div>
-          <div class="timeline-list fade-in">
-            <article class="timeline-item experience-item">
-              <div class="timeline-badge"></div>
-              <div>
-                <h3>Technical Analyst 2</h3>
-                <p>Bank of America — Gift City, Gujarat</p>
-                <span>Mar 2021 – Present</span>
-                <ul class="experience-points">
-                  <li>
-                    Migrated 500+ servers from Windows 2012 to Windows 2019/2022
-                    with planning, PowerShell automation, cross-team coordination,
-                    security hardening, code deployments, and validation with <1% incident rate.
-                  </li>
-                  <li>
-                    Supported SiteMinder to Ping migration for 200+ internal
-                    applications with post-migration validation and application team coordination.
-                  </li>
-                  <li>
-                    Built and maintained CI/CD pipelines using Celestial, Ansible,
-                    XLR, and Jenkins to enable efficient automation across environments.
-                  </li>
-                  <li>
-                    Managed Windows and Linux servers, optimized performance,
-                    security, and uptime, and automated routine tasks with PowerShell and Python.
-                  </li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="timeline-item experience-item">
-              <div class="timeline-badge"></div>
-              <div>
-                <h3>Trainee Engineer</h3>
-                <p>Epitome Components Pvt. Ltd. — Ahilyanagar, Maharashtra</p>
-                <span>Dec 2018 – Dec 2019</span>
-                <ul class="experience-points">
-                  <li>
-                    Worked in the quality control team overseeing testing and
-                    inspection of Printed Circuit Boards (PCBs) to ensure adherence
-                    to company standards and industry specifications.
-                  </li>
-                </ul>
-              </div>
-            </article>
-          </div>
+          <article class="timeline-item experience-item">
+            <div class="timeline-badge"></div>
+            <div>
+              <h3>Trainee Engineer</h3>
+              <p>Epitome Components Pvt. Ltd. — Ahilyanagar, Maharashtra</p>
+              <span>Dec 2018 – Dec 2019</span>
+              <ul class="experience-points">
+                <li>
+                  Worked in the quality control team overseeing testing and
+                  inspection of Printed Circuit Boards (PCBs) to ensure adherence
+                  to company standards and industry specifications.
+                </li>
+              </ul>
+            </div>
+          </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="projects" class="section alt-section">
-        <div class="container">
-          <div class="section-heading fade-in">
-            <p class="eyebrow">Projects</p>
-            <h2>Selected Work Highlights</h2>
-          </div>
-          <div class="project-grid fade-in">
-            <article class="project-card">
-              <h3>Enterprise Server Migration</h3>
-              <p>
-                Coordinated and executed migration of 500+ Windows servers to newer
-                supported versions, using PowerShell automation and security hardening
-                to reduce operational risk.
-              </p>
-              <a href="#contact">Request details</a>
-            </article>
-            <article class="project-card">
-              <h3>SSO Migration Program</h3>
-              <p>
-                Led validation and coordination for SiteMinder to Ping migration across
-                200+ internal applications, ensuring smooth authentication token
-                transition and post-release stability.
-              </p>
-              <a href="#contact">Request details</a>
-            </article>
-            <article class="project-card">
-              <h3>CI/CD Pipeline Automation</h3>
-              <p>
-                Configured and deployed automated pipelines with Celestial, Ansible,
-                XLR, and Jenkins to standardize release workflows and improve delivery speed.
-              </p>
-              <a href="#contact">Request details</a>
-            </article>
-            <article class="project-card">
-              <h3>Windows Admin Automation</h3>
-              <p>
-                Developed PowerShell and Python automation scripts to reduce repetitive
-                administrative work and improve system efficiency on Windows servers.
-              </p>
-              <a href="#contact">Request details</a>
-            </article>
-          </div>
+    <section id="projects" class="section alt-section">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <p class="eyebrow">Projects</p>
+          <h2>Selected Work Highlights</h2>
         </div>
-      </section>
+        <div class="project-grid fade-in">
+          <article class="project-card">
+            <h3>Enterprise Server Migration</h3>
+            <p>
+              Coordinated and executed migration of 500+ Windows servers to newer
+              supported versions, using PowerShell automation and security hardening
+              to reduce operational risk.
+            </p>
+            <a href="#contact">Request details</a>
+          </article>
+          <article class="project-card">
+            <h3>SSO Migration Program</h3>
+            <p>
+              Led validation and coordination for SiteMinder to Ping migration across
+              200+ internal applications, ensuring smooth authentication token
+              transition and post-release stability.
+            </p>
+            <a href="#contact">Request details</a>
+          </article>
+          <article class="project-card">
+            <h3>CI/CD Pipeline Automation</h3>
+            <p>
+              Configured and deployed automated pipelines with Celestial, Ansible,
+              XLR, and Jenkins to standardize release workflows and improve delivery speed.
+            </p>
+            <a href="#contact">Request details</a>
+          </article>
+          <article class="project-card">
+            <h3>Windows Admin Automation</h3>
+            <p>
+              Developed PowerShell and Python automation scripts to reduce repetitive
+              administrative work and improve system efficiency on Windows servers.
+            </p>
+            <a href="#contact">Request details</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-      <section id="contact" class="section">
-        <div class="container contact-grid">
-          <div class="fade-in">
-            <div class="section-heading">
-              <p class="eyebrow">Contact</p>
-              <h2>Let’s Connect</h2>
-            </div>
-            <ul class="contact-list">
-              <li><strong>Email:</strong> kd026513@gmail.com</li>
-              <li><strong>Location:</strong> Ahilyanagar, Maharashtra</li>
-              <li><strong>LinkedIn:</strong> linkedin.com/in/ketan-darkunde</li>
-            </ul>
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="fade-in">
+          <div class="section-heading">
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s Connect</h2>
+          </div>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> kd026513@gmail.com</li>
+            <li><strong>Location:</strong> Ahilyanagar, Maharashtra</li>
+            <li><strong>LinkedIn:</strong> linkedin.com/in/ketan-darkunde</li>
+          </ul>
+        </div>
+
+        <form id="contactForm" class="contact-form fade-in" action="https://formspree.io/f/xvzewgkj" method="POST"
+          novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+            <small class="error-message" id="nameError"></small>
           </div>
 
-          <form
-            id="contactForm"
-            class="contact-form fade-in"
-            action="https://formspree.io/f/xvzewgkj"
-            method="POST"
-            novalidate
-          >
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" required />
-              <small class="error-message" id="nameError"></small>
-            </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+            <small class="error-message" id="emailError"></small>
+          </div>
 
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" required />
-              <small class="error-message" id="emailError"></small>
-            </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <small class="error-message" id="messageError"></small>
+          </div>
 
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-              <small class="error-message" id="messageError"></small>
-            </div>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
 
-            <button class="btn btn-primary" type="submit">Send Message</button>
-            <p id="formStatus" class="form-status" aria-live="polite"></p>
-          </form>
-        </div>
-      </section>
-    </main>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const heroElement = document.getElementById('element');
 
-    <script src="script.js"></script>
-  </body>
+      if (heroElement && window.Typed) {
+        new Typed('#element', {
+          strings: ['DevOps Engineer', 'Powershell Automation Enthusiast', 'Windows Administrator', 'Linux Administrator'],
+          typeSpeed: 50,
+          backSpeed: 30,
+          loop: true,
+        });
+      }
+    });
+  </script>
+</body>
+
 </html>
