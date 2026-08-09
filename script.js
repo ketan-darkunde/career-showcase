@@ -6,8 +6,8 @@ const savedTheme = localStorage.getItem('portfolio-theme');
 
 const syncThemeToggle = () => {
   const isDark = body.dataset.theme === 'dark';
-  moonIcon.style.display = isDark ? 'none' : 'inline-block';
-  sunIcon.style.display = isDark ? 'inline-block' : 'none';
+  moonIcon.style.display = isDark ? 'inline-block' : 'none';
+  sunIcon.style.display = isDark ? 'none' : 'inline-block';
   themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
 };
 
