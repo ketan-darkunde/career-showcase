@@ -44,9 +44,13 @@ html {
 body {
   margin: 0;
   font-family: "Poppins", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background: var(--bg);
+  background:
+    radial-gradient(circle at top left, color-mix(in srgb, var(--accent) 18%, transparent) 0, transparent 38%),
+    radial-gradient(circle at top right, color-mix(in srgb, var(--accent-strong) 12%, transparent) 0, transparent 32%),
+    linear-gradient(135deg, var(--bg) 0%, color-mix(in srgb, var(--surface-alt) 70%, var(--bg)) 100%);
   color: var(--text);
   line-height: 1.6;
+  min-height: 100vh;
 }
 
 img {
@@ -241,13 +245,15 @@ a {
 }
 
 .btn-secondary {
-  border: 1px solid var(--border);
-  background: transparent;
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--border));
+  background: #111827;
+  color: #ffffff;
+  box-shadow: 0 10px 25px rgba(17, 24, 39, 0.2);
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus-visible {
+  background: #0f172a;
   box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.12), 0 0 18px rgba(124, 58, 237, 0.22);
   transform: translateY(-2px);
 }
