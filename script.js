@@ -1,19 +1,29 @@
 const themeToggle = document.getElementById('themeToggle');
 const body = document.body;
+const moonIcon = themeToggle.querySelector('.moon-icon');
+const sunIcon = themeToggle.querySelector('.sun-icon');
 const savedTheme = localStorage.getItem('portfolio-theme');
+
+const syncThemeToggle = () => {
+  const isDark = body.dataset.theme === 'dark';
+  moonIcon.style.display = isDark ? 'none' : 'inline-block';
+  sunIcon.style.display = isDark ? 'inline-block' : 'none';
+  themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+};
 
 if (savedTheme === 'dark') {
   body.dataset.theme = 'dark';
-  themeToggle.querySelector('.theme-icon').textContent = '☀️';
 } else {
   body.dataset.theme = 'light';
 }
+
+syncThemeToggle();
 
 themeToggle.addEventListener('click', () => {
   const nextTheme = body.dataset.theme === 'dark' ? 'light' : 'dark';
   body.dataset.theme = nextTheme;
   localStorage.setItem('portfolio-theme', nextTheme);
-  themeToggle.querySelector('.theme-icon').textContent = nextTheme === 'dark' ? '☀️' : '🌙';
+  syncThemeToggle();
 });
 
 const observer = new IntersectionObserver(
@@ -41,7 +51,7 @@ const validateField = (id, message) => {
   if (!value) {
     errorNode.textContent = message;
     return false;
-  }
+  }f
 
   if (id === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
     errorNode.textContent = 'Enter a valid email address.';

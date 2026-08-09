@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
     rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -27,7 +28,8 @@
         <a href="#contact">Contact</a>
       </nav>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-        <span class="theme-icon">🌙</span>
+        <i class="fas fa-moon moon-icon"></i>
+        <i class="fas fa-sun sun-icon"></i>
       </button>
     </div>
   </header>
@@ -41,9 +43,14 @@
             passionate<br><span id="element" class="highlight-role"></span>
           </h1>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="assets/resume.docx" download>Download Resume</a>
-            <a class="btn btn-secondary" href="https://github.com/ketan-darkunde" target="_blank" rel="noreferrer">View
-              on GitHub</a>
+            <a class="btn btn-primary" href="assets/resume.docx" download>
+              <i class="fa fa-download"  style="margin-right:10px"></i>
+              <span>Download Resume</span>
+            </a>
+            <a class="btn btn-secondary" href="https://github.com/ketan-darkunde" target="_blank" rel="noreferrer">
+              <i class="fab fa-github"  style="margin-right:10px"></i>
+              <span>View on GitHub</span>
+            </a>
           </div>
         </div>
         <img class="profile-image" src="assets/devops-engineer-illustration.webp" alt="devops-engineer-illustration" />
@@ -91,28 +98,28 @@
           <h2>Academic Background</h2>
         </div>
         <div class="timeline-list fade-in">
-          <article class="timeline-item">
+          <article class="timeline-item education-item">
             <div class="timeline-badge"></div>
             <div>
               <h3>PG Diploma (CDAC) in DITISS</h3>
               <p>IACSD, Pune, Maharashtra</p>
-              <span>March 2020 – Feb 2021</span>
+              <span class="timeline-date">March 2020 – Feb 2021</span>
             </div>
           </article>
-          <article class="timeline-item">
+          <article class="timeline-item education-item right">
             <div class="timeline-badge"></div>
             <div>
               <h3>Bachelor of Engineering in E &amp; TC</h3>
               <p>SCSMCOE, Ahilyanagar, Maharashtra</p>
-              <span>Jun 2014 – Jun 2017</span>
+              <span class="timeline-date">Jun 2014 – Jun 2017</span>
             </div>
           </article>
-          <article class="timeline-item">
+          <article class="timeline-item education-item left">
             <div class="timeline-badge"></div>
             <div>
               <h3>Diploma in E &amp; TC</h3>
               <p>Sau Sunderbai Manik Adsul Polytechnic, Ahilyanagar, Maharashtra</p>
-              <span>Jun 2011 – Jun 2014</span>
+              <span class="timeline-date">Jun 2011 – Jun 2014</span>
             </div>
           </article>
         </div>
@@ -126,12 +133,12 @@
           <h2>Work Timeline</h2>
         </div>
         <div class="timeline-list fade-in">
-          <article class="timeline-item experience-item">
+          <article class="timeline-item experience-item work-item">
             <div class="timeline-badge"></div>
             <div>
               <h3>Technical Analyst 2</h3>
               <p>Bank of America — Gift City, Gujarat</p>
-              <span>Mar 2021 – Present</span>
+              <span class="timeline-date">Mar 2021 – Present</span>
               <ul class="experience-points">
                 <li>
                   Migrated 500+ servers from Windows 2012 to Windows 2019/2022
@@ -153,12 +160,12 @@
             </div>
           </article>
 
-          <article class="timeline-item experience-item">
+          <article class="timeline-item experience-item work-item right">
             <div class="timeline-badge"></div>
             <div>
               <h3>Trainee Engineer</h3>
               <p>Epitome Components Pvt. Ltd. — Ahilyanagar, Maharashtra</p>
-              <span>Dec 2018 – Dec 2019</span>
+              <span class="timeline-date">Dec 2018 – Dec 2019</span>
               <ul class="experience-points">
                 <li>
                   Worked in the quality control team overseeing testing and
@@ -225,10 +232,32 @@
             <h2>Let’s Connect</h2>
           </div>
           <ul class="contact-list">
-            <p><a href="mailto:kd026513@gmail.com">&#9993; kd026513@gmail.com</a></p>
-            <p>&#128205; Ahilyanagar, Maharashtra</p>
-            <i class="fa-brands fa-github"></i><a href="https://github.com/ketan-darkunde"> github.com/ketan-darkunde</a>
-            <br><i class="fa-brands fa-linkedin"></i><a href="https://linkedin.com/in/ketan-darkunde"> linkedin.com/in/ketan-darkunde</a>
+            <li class="contact-item">
+              <a href="mailto:kd026513@gmail.com" aria-label="Email">
+                <i class="fa fa-envelope"></i>
+                <span>kd026513@gmail.com</span>
+              </a>
+            </li>
+            <li class="contact-item">
+              <a href="https://github.com/ketan-darkunde" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+                <span>github.com/ketan-darkunde</span>
+              </a>
+            </li>
+            <li class="contact-item">
+              <a href="https://linkedin.com/in/ketan-darkunde" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+                <span>linkedin.com/in/ketan-darkunde</span>
+              </a>
+            </li>
+            <li class="contact-item">
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+              <span>Ahilyanagar, Maharashtra</span>
+            </li>
+            <li class="contact-item">
+              <i class="fa fa-clock" aria-hidden="true"></i>
+              <span>IST (UTC+05:30)</span>
+            </li>
           </ul>
         </div>
 
